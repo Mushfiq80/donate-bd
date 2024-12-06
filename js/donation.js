@@ -16,8 +16,6 @@ document.getElementById('noakhali-btn').addEventListener('click', function () {
 
 
 
-
-
 document.getElementById('feni-btn').addEventListener('click', function () {
     const input = parseFloat(document.getElementById('feni-input').value);
     const currentAmount = parseFloat(document.getElementById('feni-amount').innerText);
@@ -49,3 +47,4 @@ document.getElementById('quota-btn').addEventListener('click', function () {
     }
     adjustBalance(input);
 });
+

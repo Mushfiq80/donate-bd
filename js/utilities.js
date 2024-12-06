@@ -12,3 +12,35 @@ function donationLog (amount, location) {
     historyLogs.appendChild(div);
      
 }
+
+//Page shifting upon button class change
+
+function changePage(id) {
+    // console.log(typeof id);
+    if(id === 'donation-page') {
+        const donationPage = document.getElementById(id);
+        const historyPage = document.getElementById('history-page');
+        donationPage.classList.add('btn-accent');
+        historyPage.classList.remove('btn-accent');
+        // section hiding and showing
+        document.getElementById('donation-section').classList.remove('hidden');
+        document.getElementById('history-logs').classList.add('hidden');
+    }
+    else {
+        const donationPage = document.getElementById('donation-page');
+        const historyPage = document.getElementById(id);
+        donationPage.classList.remove('btn-accent');
+        historyPage.classList.add('btn-accent');
+        // section hiding and showing
+        document.getElementById('donation-section').classList.add('hidden');
+        document.getElementById('history-logs').classList.remove('hidden');
+    }
+}
+
+// Redirect Page 
+function goBlog() {
+  location.replace("/blog.html")
+}
+function goHome() {
+  location.replace("/index.html")
+}

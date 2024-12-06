@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="lexend-font text">
+    <header>
+        <div class="w-full bg-indigo-100">
+            <div class="flex justify-between py-6 container mx-auto">
+                <button onclick="goHome()" class="btn btn-accent">Home</button>
+                <div class="flex gap-4 items-center">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="font-bold text-2xl">Donate Bangladesh</h1>
+                </div>
+                <h2 class="flex items-center gap-2"><img src="/assets/coin.png"> <span id="main-balance">5500</span> BDT
+                </h2>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto mt-14 space-y-2">
+        <h1 class="text-3xl font-semibold">Important FAQs</h1>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">1. What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The DOM (Document Object Model) is a programming interface for web documents. It represents the
+                    structure of a document as a tree of objects, allowing developers to access and manipulate HTML and
+                    XML documents programmatically using languages like JavaScript.
+                </p>
+
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">2. How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>You can select an element from the DOM using various JavaScript methods, such as
+                    <code>document.getElementById()</code> to select by ID, <code>document.querySelector()</code> to
+                    select using CSS selectors, or <code>document.getElementsByClassName()</code> to select elements by
+                    class name.
+                </p>
+
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">3. How can you change the content of an element in the DOM?
+            </div>
+            <div class="collapse-content">
+                <p>You can change the content of an element by accessing it and modifying its <code>innerHTML</code> or
+                    <code>textContent</code> property. For example:
+                    <code>document.getElementById('example').textContent = 'New Content';</code>.
+                </p>
+
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">4. What is event handling in the DOM?</div>
+            <div class="collapse-content">
+                <p>Event handling in the DOM refers to the process of detecting and responding to user actions (events) such as clicks, mouse movements, or keyboard inputs. You can add event listeners to elements using methods like <code>addEventListener()</code>. For example: <code>document.getElementById('btn').addEventListener('click', function() { alert('Button clicked!'); });</code>.</p>
+  
+            </div>
+        </div>
+    </main>
+    <script src="/js/utilities.js"></script>
+</body>
+
+</html>
