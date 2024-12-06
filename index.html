@@ -7,16 +7,31 @@
     <title>Donate Bangladesh</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+    </style>
 </head>
 
-<body class="">
+<body class="lexend-font">
     <!-- Header Section  -->
     <header>
         <div class="w-full bg-indigo-100">
             <div class="flex justify-between py-6 container mx-auto">
                 <button class="btn btn-accent">Blog</button>
-                <h1>Donate Bangladesh</h1>
-                <h2 class="flex items-center gap-2"><img src="/assets/coin.png"> <span id="main-balance">5500</span> BDT</h2>
+                <div class="flex gap-4 items-center">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="font-bold text-2xl">Donate Bangladesh</h1>
+                </div>
+                <h2 class="flex items-center gap-2"><img src="/assets/coin.png"> <span id="main-balance">5500</span> BDT
+                </h2>
             </div>
         </div>
         <!-- Header Nav Section  -->
@@ -28,18 +43,21 @@
     <main class="container mx-auto">
 
         <!--------- Donation Section ------------>
-        <section class="space-y-6">
+        <section id="donation-section" class="space-y-6">
 
             <!-- Noakhali  -->
             <div class="border-2 p-8 rounded-lg flex flex-row-reverse justify-center items-center gap-8">
                 <div>
-                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2"><img src="/assets/coin.png"><span id="noakhali-amount">0</span> BDT</button>
+                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2"><img
+                            src="/assets/coin.png"><span id="noakhali-amount">0</span> BDT</button>
                     <h1 id="location1" class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum? Commodi repudiandae
+                    <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum?
+                        Commodi repudiandae
                         velit
                         dolore
                         dolorum quaerat itaque natus officiis vel.</p>
-                    <input class="w-full border-2 p-2 my-3" type="number" id="noakhali-input" placeholder="Write Donation Amount"><br>
+                    <input class="w-full border-2 p-2 my-3" type="number" id="noakhali-input"
+                        placeholder="Write Donation Amount"><br>
                     <button id="noakhali-btn" class="btn btn-accent w-full ">Donate Now</button>
                 </div>
                 <div>
@@ -51,13 +69,16 @@
             <!-- Feni  -->
             <div class="border-2 p-8 rounded-lg flex flex-row-reverse justify-center items-center gap-8">
                 <div>
-                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2"><img src="/assets/coin.png"><span id="feni-amount">0</span> BDT</button>
+                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2"><img
+                            src="/assets/coin.png"><span id="feni-amount">0</span> BDT</button>
                     <h1 id="location2" class="font-bold text-xl">Donate for Flood at Feni, Bangladesh</h1>
-                    <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum? Commodi repudiandae
+                    <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum?
+                        Commodi repudiandae
                         velit
                         dolore
                         dolorum quaerat itaque natus officiis vel.</p>
-                    <input id="feni-input" class="w-full border-2 p-2 my-3" type="number" placeholder="Write Donation Amount"><br>
+                    <input id="feni-input" class="w-full border-2 p-2 my-3" type="number"
+                        placeholder="Write Donation Amount"><br>
                     <button id="feni-btn" class="btn btn-accent w-full">Donate Now</button>
                 </div>
                 <div>
@@ -69,12 +90,15 @@
             <!-- Aid for Injury  -->
             <div class="border-2 p-8 rounded-lg flex flex-row-reverse justify-center items-center gap-8">
                 <div>
-                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2"><img src="/assets/coin.png"><span id="quota-amount">100</span> BDT</button>
+                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2"><img
+                            src="/assets/coin.png"><span id="quota-amount">100</span> BDT</button>
                     <h1 id="location3" class="font-bold text-xl">Aid for Injured in the Quota Movement</h1>
-                    <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum? Commodi repudiandae
+                    <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum?
+                        Commodi repudiandae
                         velit dolore dolorum quaerat itaque natus officiis vel.</p>
                     <div>
-                        <input id="quota-input" class="w-full border-2 p-2 my-3" type="number" placeholder="Write Donation Amount"><br>
+                        <input id="quota-input" class="w-full border-2 p-2 my-3" type="number"
+                            placeholder="Write Donation Amount"><br>
                         <button id="quota-btn" class="btn btn-accent w-full">Donate Now</button>
                     </div>
                 </div>
