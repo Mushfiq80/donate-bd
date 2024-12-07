@@ -1,50 +1,20 @@
-document.getElementById('noakhali-btn').addEventListener('click', function () {
-    const input = parseFloat(document.getElementById('noakhali-input').value);
-    const currentAmount = parseFloat(document.getElementById('noakhali-amount').innerText);
-    const location = document.getElementById('location1').innerText;
+document.querySelectorAll('.donation-card').forEach((card) => {
+    const id = card.dataset.id;
     
-    if (input && !isNaN(input) && input > 0) {
-        document.getElementById('noakhali-amount').innerText = currentAmount + input;
-        document.getElementById('noakhali-input').value = '';
-        donationLog(input, location);
-    }
-    else {
-        alert('Please enter a valid amount');
-    }
-    adjustBalance(input);
+// Now trigger upon button click event
+    card.querySelector('.donate-btn').addEventListener('click', function () {
+        const input = parseFloat(card.querySelector(`#${id}-input`).value);
+        const amountElement = card.querySelector(`#${id}-amount`);
+        const currentAmount = parseFloat(amountElement.innerText);
+        const location = card.querySelector(`#location1, #location2, #location3`).innerText;
+
+        if (input && !isNaN(input) && input > 0) {
+            amountElement.innerText = currentAmount + input;
+            card.querySelector(`#${id}-input`).value = '';
+            donationLog(input, location);
+        } else {
+            alert('Please enter a valid amount');
+        }
+        adjustBalance(input);
+    });
 });
-
-
-
-document.getElementById('feni-btn').addEventListener('click', function () {
-    const input = parseFloat(document.getElementById('feni-input').value);
-    const currentAmount = parseFloat(document.getElementById('feni-amount').innerText);
-    const location = document.getElementById('location2').innerText;
-
-    if (input && !isNaN(input) && input > 0) {
-        document.getElementById('feni-amount').innerText = currentAmount + input;
-        document.getElementById('feni-input').value = '';
-        donationLog(input, location);
-    }
-    else {
-        alert('Please enter a valid amount');
-    }
-    adjustBalance(input);
-});
-
-document.getElementById('quota-btn').addEventListener('click', function () {
-    const input = parseFloat(document.getElementById('quota-input').value);
-    const currentAmount = parseFloat(document.getElementById('quota-amount').innerText);
-    const location = document.getElementById('location3').innerText;
-
-    if (input && !isNaN(input) && input > 0) {
-        document.getElementById('quota-amount').innerText = currentAmount + input;
-        document.getElementById('quota-input').value = '';
-        donationLog(input, location);
-    }
-    else {
-        alert('Please enter a valid amount');
-    }
-    adjustBalance(input);
-});
-

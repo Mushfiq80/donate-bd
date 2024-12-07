@@ -30,7 +30,7 @@
                     <img src="assets/logo.png" alt="">
                     <h1 class="font-bold text-2xl">Donate Bangladesh</h1>
                 </div>
-                <h2 class="flex items-center gap-2"><img src="/assets/coin.png"> <span id="main-balance">59000</span> BDT
+                <h2 class="flex items-center gap-2 font-semibold"><img src="/assets/coin.png"> <span id="main-balance">59000</span> BDT
                 </h2>
             </div>
         </div>
@@ -47,8 +47,8 @@
 
             <!-- Noakhali  -->
             <div class="border-2 shadow-lg p-8 rounded-lg flex flex-col md:flex-row-reverse justify-center items-center gap-8">
-                <div class="w-full">
-                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2"><img
+                <div class="donation-card w-full" data-id="noakhali">
+                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2 font-semibold"><img
                             src="/assets/coin.png"><span id="noakhali-amount">0</span> BDT</button>
                     <h1 id="location1" class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
                     <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum?
@@ -58,7 +58,7 @@
                         dolorum quaerat itaque natus officiis vel.</p>
                     <input class="w-full border-2 p-2 my-3" type="number" id="noakhali-input"
                         placeholder="Write Donation Amount"><br>
-                    <button id="noakhali-btn" class="btn btn-accent w-full ">Donate Now</button>
+                    <button id="noakhali-btn" class="btn btn-accent w-full donate-btn">Donate Now</button>
                 </div>
                 <div class="w-full">
                     <img class="w-full" src="/assets/noakhali.png" alt="Noakhali Aid Party">
@@ -68,8 +68,8 @@
 
             <!-- Feni  -->
             <div class="border-2 shadow-lg p-8 rounded-lg flex flex-col md:flex-row-reverse justify-center items-center gap-8">
-                <div class=" w-full">
-                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2"><img
+                <div class="donation-card w-full" data-id="feni">
+                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2 font-semibold"><img
                             src="/assets/coin.png"><span id="feni-amount">200</span> BDT</button>
                     <h1 id="location2" class="font-bold text-xl">Donate for Flood at Feni, Bangladesh</h1>
                     <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum?
@@ -79,7 +79,7 @@
                         dolorum quaerat itaque natus officiis vel.</p>
                     <input id="feni-input" class="w-full border-2 p-2 my-3" type="number"
                         placeholder="Write Donation Amount"><br>
-                    <button id="feni-btn" class="btn btn-accent w-full">Donate Now</button>
+                    <button id="feni-btn" class="btn btn-accent w-full donate-btn">Donate Now</button>
                 </div>
                 <div class="w-full">
                     <img class="w-full" src="/assets/feni.png" alt="Feni Aid Party">
@@ -89,8 +89,8 @@
 
             <!-- Aid for Injury  -->
             <div class="border-2 shadow-lg p-8 rounded-lg flex flex-col md:flex-row-reverse justify-center items-center gap-8">
-                <div class="w-full">
-                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2"><img
+                <div class="donation-card w-full" data-id="quota">
+                    <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2 font-semibold"><img
                             src="/assets/coin.png"><span id="quota-amount">100</span> BDT</button>
                     <h1 id="location3" class="font-bold text-xl">Aid for Injured in the Quota Movement</h1>
                     <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum?
@@ -99,7 +99,7 @@
                     <div>
                         <input id="quota-input" class="w-full border-2 p-2 my-3" type="number"
                             placeholder="Write Donation Amount"><br>
-                        <button id="quota-btn" class="btn btn-accent w-full">Donate Now</button>
+                        <button id="quota-btn" class="btn btn-accent w-full donate-btn">Donate Now</button>
                     </div>
                 </div>
                 <div class="w-full">
@@ -110,7 +110,7 @@
 
 
         <!-- History Section -->
-        <section id="history-logs" class="hidden bg-yellow-50 h-screen">
+        <section id="history-logs" class="hidden bg-yellow-50">
             <div></div>
         </section>
     </main>
