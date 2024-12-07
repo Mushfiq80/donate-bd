@@ -5,7 +5,7 @@ function adjustBalance(amount) {
 
 function donationLog (amount, location) {
     const div = document.createElement('div');
-    div.classList.add('border-2', 'p-2', 'mb-4', 'rounded-md');
+    div.classList.add('border-4', 'p-2', 'mb-4', 'rounded-md', 'bg-gray-100');
     div.innerHTML = `<h1 class="font-bold text-xl">${amount} Taka is Donated to ${location}</h1>
     <p>${new Date()}</p>`;
     const historyLogs = document.getElementById('history-logs');
