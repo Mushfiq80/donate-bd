@@ -22,15 +22,17 @@
 
 <body class="lexend-font bg-lime-50">
     <!-- Header Section  -->
-    <header class="sticky top-0">
+    <header class=" md:sticky top-0">
         <div class="w-full bg-green-200 bg-opacity-90">
-            <div class="flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:justify-between py-6 container mx-auto">
+            <div
+                class="flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:justify-between py-6 container mx-auto">
                 <button onclick="goBlog()" class="btn btn-accent">Blog</button>
                 <div class="flex gap-4 items-center">
                     <img src="assets/logo.png" alt="">
                     <h1 class="font-bold text-2xl">Donate Bangladesh</h1>
                 </div>
-                <h2 class="flex items-center gap-2 font-semibold"><img src="/assets/coin.png"> <span id="main-balance">59000</span> BDT
+                <h2 class="flex items-center gap-2 font-semibold"><img src="/assets/coin.png"> <span
+                        id="main-balance">59000</span> BDT
                 </h2>
             </div>
         </div>
@@ -46,16 +48,19 @@
         <section id="donation-section" class="space-y-6">
 
             <!-- Noakhali  -->
-            <div class="border-2 shadow-lg p-8 rounded-lg flex flex-col md:flex-row-reverse justify-center items-center gap-8">
-                <div class="donation-card w-full" data-id="noakhali">
+            <div
+                class="border-2 shadow-lg p-8 rounded-lg flex flex-col md:flex-row-reverse justify-center items-center gap-8">
+                <div class="donation-card w-full space-y-6" data-id="noakhali">
                     <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2 font-semibold"><img
                             src="/assets/coin.png"><span id="noakhali-amount">0</span> BDT</button>
                     <h1 id="location1" class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum?
-                        Commodi repudiandae
-                        velit
-                        dolore
-                        dolorum quaerat itaque natus officiis vel.</p>
+                    <p class="text-slate-500">
+                        The recent devastating floods in Noakhali have left countless families homeless and struggling
+                        to survive. Homes have been destroyed, crops washed away, and access to clean water and basic
+                        necessities severely limited. Your generous donation will help provide emergency relief,
+                        including food, clean water, medical aid, and temporary shelters to those in desperate need.
+                        Together, we can bring hope and support to rebuild lives in Noakhali.
+                    </p>
                     <input class="w-full border-2 p-2 my-3" type="number" id="noakhali-input"
                         placeholder="Write Donation Amount"><br>
                     <button id="noakhali-btn" class="btn btn-accent w-full donate-btn">Donate Now</button>
@@ -67,16 +72,19 @@
 
 
             <!-- Feni  -->
-            <div class="border-2 shadow-lg p-8 rounded-lg flex flex-col md:flex-row-reverse justify-center items-center gap-8">
-                <div class="donation-card w-full" data-id="feni">
+            <div
+                class="border-2 shadow-lg p-8 rounded-lg flex flex-col md:flex-row-reverse justify-center items-center gap-8">
+                <div class="donation-card w-full space-y-6" data-id="feni">
                     <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2 font-semibold"><img
                             src="/assets/coin.png"><span id="feni-amount">200</span> BDT</button>
                     <h1 id="location2" class="font-bold text-xl">Donate for Flood at Feni, Bangladesh</h1>
-                    <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum?
-                        Commodi repudiandae
-                        velit
-                        dolore
-                        dolorum quaerat itaque natus officiis vel.</p>
+                    <p class="text-slate-500">
+                        Feni is facing one of its worst flood crises, with rising waters displacing thousands of
+                        families and cutting off vital resources. Children, elderly, and vulnerable groups are among the
+                        worst affected. Your contribution can make a significant impact by delivering immediate
+                        assistance such as food, safe drinking water, hygiene kits, and essential medical care. Join us
+                        in standing with the people of Feni as they recover and rebuild from this natural disaster.
+                    </p>
                     <input id="feni-input" class="w-full border-2 p-2 my-3" type="number"
                         placeholder="Write Donation Amount"><br>
                     <button id="feni-btn" class="btn btn-accent w-full donate-btn">Donate Now</button>
@@ -88,24 +96,46 @@
 
 
             <!-- Aid for Injury  -->
-            <div class="border-2 shadow-lg p-8 rounded-lg flex flex-col md:flex-row-reverse justify-center items-center gap-8">
-                <div class="donation-card w-full" data-id="quota">
+            <div
+                class="border-2 shadow-lg p-8 rounded-lg flex flex-col md:flex-row-reverse justify-center items-center gap-8">
+                <div class="donation-card w-full space-y-6" data-id="quota">
                     <button class="bg-slate-100 p-2 rounded-md flex items-center gap-2 font-semibold"><img
                             src="/assets/coin.png"><span id="quota-amount">100</span> BDT</button>
                     <h1 id="location3" class="font-bold text-xl">Aid for Injured in the Quota Movement</h1>
-                    <p class="text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, laborum?
-                        Commodi repudiandae
-                        velit dolore dolorum quaerat itaque natus officiis vel.</p>
+                    <p class="text-slate-500">
+                        The Quota Reform Movement has left many young individuals injured, facing medical bills and
+                        emotional trauma. These students, who stood up for equality and fairness, need our support now
+                        more than ever. By donating, you can help cover medical expenses, rehabilitation costs, and
+                        provide moral support to these brave individuals who fought for justice. Let’s show them they
+                        are not alone in this journey towards healing.
+                    </p>
                     <div>
                         <input id="quota-input" class="w-full border-2 p-2 my-3" type="number"
                             placeholder="Write Donation Amount"><br>
-                        <button id="quota-btn" class="btn btn-accent w-full donate-btn">Donate Now</button>
+                        <button id="quota-btn" onclick="my_modal_5.showModal()"
+                            class="btn btn-accent w-full donate-btn">Donate Now</button>
                     </div>
                 </div>
                 <div class="w-full">
                     <img class="w-full" src="/assets/quota-protest.png" alt="Quota na Medha?">
                 </div>
             </div>
+
+            <!-- Modal Code common part  -->
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle text-center ">
+                <div class="modal-box flex flex-col items-center bg-orange-100">
+                    <h1 class="text-2xl font-bold mb-4">Congrates!</h1>
+                    <img src="assets/coin.png" alt="Coin logo">
+                    <p class="py-4">You Have Donated for Humankind</p>
+                    <h3 class="font-semibold text-xl">Successfully</h3>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
 
 

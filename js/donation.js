@@ -1,3 +1,5 @@
+
+// operation for all donation cards 
 document.querySelectorAll('.donation-card').forEach((card) => {
     const id = card.dataset.id;
     
@@ -12,7 +14,11 @@ document.querySelectorAll('.donation-card').forEach((card) => {
             amountElement.innerText = currentAmount + input;
             card.querySelector(`#${id}-input`).value = '';
             donationLog(input, location);
+            const modal = document.getElementById('my_modal_5');
+            modal.showModal();
+            
         } else {
+            card.querySelector(`#${id}-input`).value = '';
             alert('Please enter a valid amount');
         }
         adjustBalance(input);
